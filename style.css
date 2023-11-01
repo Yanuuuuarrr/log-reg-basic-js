@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container {
+  display: grid;
+  grid-template-areas:
+    "judul judul"
+    "login register"
+    "gas reg";
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+.container h1 {
+  width: 100%;
+  display: flex;
+  grid-area: judul;
+  justify-content: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: brown;
+}
+.container #reg {
+  grid-area: reg;
+}
+.container #gas {
+  grid-area: gas;
+}
+
+.login {
+  grid-area: login;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.register {
+  grid-area: register;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.login input,
+.register input {
+  margin-top: 1rem;
+}
+.hilang {
+  display: none;
+}
+
+.tombol #gas,
+#masukRegister {
+  display: flex;
+  margin-top: 0.6rem;
+  flex-direction: column;
+  text-align: center;
+  justify-items: center;
+}
